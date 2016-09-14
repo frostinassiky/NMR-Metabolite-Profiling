@@ -1,0 +1,6 @@
+%% by Frost @ UAlberta
+%% Formate: [introduction]:[var=value] (don't change order)
+1. pps range from a to b: pps_start,pps_end = 0,12
+2. pps step or pps total number: pps_step?,value = 1,0.0001
+3. minishift var^1/2: number? value = 0.005
+4. number of figures to display: 0 or 3?,value = 0
