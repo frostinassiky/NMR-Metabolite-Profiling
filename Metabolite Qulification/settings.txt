@@ -1,0 +1,12 @@
+%% by Frost @ UAlberta
+%% Formate: [introduction]:[var=value] (don't change order)
+1. pps range from a to b: pps_start,pps_end = 0,12
+2. pps step or pps total number: pps_step?,value = 1,0.002
+3. minishift var^1/2: number? value = 0.005
+4. number of figures to display: 0 or 3?,value = 0
+5. iterations for each setp: ite1(concen),ite2(peak),ite3(global),ite4(useless) = 1000,10,10000,1
+6. optimal method: Xa = Match_solution
+7. max concentration: conc_max = 5
+8. min peaks hight to detect: pks_min = 0.001
+9. min strength in link: strth_min = 0.0001
+10. mixed integer nonlinear programming solver: NLSolver = YaGridSolver

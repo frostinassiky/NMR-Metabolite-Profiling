@@ -1,2 +1,2 @@
-# Spectrum-Generation
-Source code of synthetic spectrum program in MATLAB
+# Metabolite-Profiling
+Source code of metabolite profiling program  in MATLAB

@@ -1,0 +1,96 @@
+--- Job find_match.gms Start 08/17/16 15:09:45 WEX-WEI 23.9.5 x86_64/MS Windows     
+GAMS Rev 239  Copyright (C) 1987-2012 GAMS Development. All rights reserved
+Licensee: Dept of Chemical Engineering                   G120809:1617AA-GEN
+          Princeton University                                       DC9841
+          License for teaching and research at degree granting institutions
+--- Starting compilation
+--- find_match.gms(1) 2 Mb
+--- .GAMS_data.txt(140) 3 Mb
+--- find_match.gms(42) 3 Mb
+--- Starting execution: elapsed 0:00:00.062
+--- find_match.gms(158) 4 Mb
+--- Generating MINLP model test
+--- find_match.gms(159) 6 Mb
+---   78 rows  98 columns  279 non-zeroes
+---   563 nl-code  129 nl-non-zeroes
+---   43 discrete-columns
+--- find_match.gms(159) 4 Mb
+--- Executing BARON: elapsed 0:00:00.187
+
+GAMS/BARON       Jul  4, 2012 23.9.5 WEX 36376.36401 WEI x86_64/MS Windows    
+
+===========================================================================
+ BARON version 11.5.2. Built: WIN-64 Mon Oct 22 23:20:37 EDT 2012
+
+ If you use this software, please cite:
+ Tawarmalani, M. and N. V. Sahinidis, A polyhedral
+ branch-and-cut approach to global optimization,
+ Mathematical Programming, 103(2), 225-249, 2005.
+
+ BARON is a product of The Optimization Firm, LLC. http://www.minlp.com/
+ Parts of the BARON software were created at the
+ University of Illinois at Urbana-Champaign.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP:  ILOG CPLEX                                      
+ For NLP: MINOS, SNOPT, GAMS external NLP solver, COIN IPOPT with MUMPS and METIS
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value 0.270469945602D+01
+ Solving bounding LP
+ Starting preprocessing LPs
+ Done with preprocessing LPs
+ Starting multi-start local search
+ Preprocessing found feasible solution with value 0.788143681316D+01
+ Done with local search
+===========================================================================
+ We have space for 69517 nodes in the tree (in 96 MB memory)
+===========================================================================
+  Iteration    Open nodes       Total time     Lower bound      Upper bound
+          1             1        000:00:00    0.788144D+01     0.413167D+02
+          1             1        000:00:00    0.788144D+01     0.895244D+01
+         17             0        000:00:01    0.788144D+01     0.788144D+01
+
+ Cleaning up solution and calculating dual
+
+                         *** Normal Completion ***            
+
+  LP  subsolver time:        000:00:01,    in seconds:          0.59
+  NLP subsolver time:        000:00:00,    in seconds:          0.22
+  Cutting time:              000:00:00,    in seconds:          0.00
+  All other time:            000:00:00,    in seconds:          0.19
+
+  Total time elapsed:        000:00:01,    in seconds:          1.00
+       on parsing:           000:00:00,    in seconds:          0.02
+       on preprocessing:     000:00:00,    in seconds:          0.17
+       on navigating:        000:00:00,    in seconds:          0.05
+       on relaxed:           000:00:00,    in seconds:          0.11
+       on local:             000:00:00,    in seconds:          0.14
+       on tightening:        000:00:00,    in seconds:          0.03
+       on marginals:         000:00:00,    in seconds:          0.00
+       on probing:           000:00:00,    in seconds:          0.48
+
+  Total no. of BaR iterations:      17
+  Best solution found at node:      17
+  Max. no. of nodes in memory:       4
+
+  Cut generation statistics (number of cuts / CPU sec)
+    Bilinear                         0         0.00
+    Multilinears                     0         0.00
+    Convexity                    56335         0.00
+
+ All done
+===========================================================================
+
+Solution      = 7.88144025473  found at node 17
+Best possible = 7.88144026261
+Absolute gap  = 7.8799997638157E-9  optca = 1E-9
+Relative gap  = 0  optcr = 1E-9
+
+--- Restarting execution
+--- find_match.gms(159) 2 Mb
+--- Reading solution for model test
+--- find_match.gms(182) 3 Mb
+--- Putfile solFile C:\Users\Frost\Google Drive\Code\Metabolite Qulification\GAMS_output.txt
+*** Status: Normal completion
+--- Job find_match.gms Stop 08/17/16 15:09:47 elapsed 0:00:02.267
